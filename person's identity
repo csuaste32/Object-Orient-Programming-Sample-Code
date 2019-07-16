@@ -1,0 +1,23 @@
+// object orient programing
+// objects have:
+// properties = adjs
+// methods = verbs
+struct Person {
+ let name: String
+ let age : Int 
+ let hobbies : [String]
+
+func sayHello(){
+ print("Hello! My name is \(name) and I'm \(age) years old.")
+    }
+} 
+let person1 = Person(name:"Jose", age:19, hobbies:["eating","sleeping","gymming"])
+
+person1.sayHello()
+
+let pers = person1
+for x in pers.hobbies{
+    print("I love \(x)")
+    print("\(x) is great!")
+}
+print("(\(pers.name) also secretly loves listening to pop music)")
